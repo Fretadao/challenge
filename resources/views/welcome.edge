@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teste Fretadão - Mars Rover</title>
+</head>
+<body>
+  <section>
+      <div>
+        <div>
+          <h1>
+            Mars Rover
+          </h1>
+          <h2>
+            Descrição
+          </h2>
+            <p>Estamos avaliando uma série de coisas, que incluem o aspecto de design da sua solução, mas, na maioria das vezes, estamos procurando boas práticas de codificação e suas habilidades de programação orientada a objetos. Também esperamos por testes automatizados.</p>
+          <h2>Problema</h2>
+          <p>Um esquadrão de robôs deve ser desembarcado pela NASA em um planalto em Marte. Este planalto, que é curiosamente retangular, deve ser navegado pelos robôs para que suas câmeras integradas possam obter uma visão completa do terreno circundante para enviar de volta à Terra.</p>
+          <p>A posição e localização de um robô é representada por uma combinação de coordenadas X e Y e uma letra representando um dos quatro pontos cardeais da bússola. O planalto é dividido em uma grade para simplificar a navegação. Uma posição de exemplo pode ser 0, 0, N, o que significa que o robô está no canto inferior esquerdo e voltado para o norte.</p>
+          <p>Para controlar um robô, a NASA envia uma simples sequência de letras. As letras possíveis são 'L', 'R' e 'M'. 'L' e 'R' fazem o robô ​​girar 90 graus para a esquerda ou para a direita, respectivamente, sem se mover do ponto atual. 'M' significa avançar um ponto de grade e manter o mesmo rumo.</p>
+          <p>Suponha que o quadrado diretamente do norte de (x, y) seja (x, y + 1).</p>
+          <h2>Input</h2>
+          <p>Para popular sua base de dados o sistema precisa expor um serviço (Webservice) que aceite a criação de um planalto, nesta mesma requisição o requisitante deverá informar um nome para este planalto.</p>
+          <p>É importante que os planaltos sejam persistidos para evitar que a cada novo deploy todas as informações desapareçam. O formato do planalto é bastante simples, as coordenadas superior-direita do planalto, as coordenadas inferior-esquerda são consideradas como 0,0.</p>
+          <p>Por exemplo, a entrada 6 6, irá gerar o seguinte planalto para a navegação:</p>
+          <p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a3d31fcab5079fb2affdd069485cfab406a07082/68747470733a2f2f7273696c76612d7765622e73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f32303137303431373134323631302d453131392d313736385f504f2d3137303931343130353834365f534c2e6a70673f763d3230313830373034313533393037"><img src="https://camo.githubusercontent.com/a3d31fcab5079fb2affdd069485cfab406a07082/68747470733a2f2f7273696c76612d7765622e73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f32303137303431373134323631302d453131392d313736385f504f2d3137303931343130353834365f534c2e6a70673f763d3230313830373034313533393037" alt="Imagem apenas para exemplo" data-canonical-src="https://rsilva-web.s3-us-west-1.amazonaws.com/20170417142610-E119-1768_PO-170914105846_SL.jpg?v=20180704153907" style="max-width:100%;"></a></p>
+          <p>Com os planaltos carregados o requisitante irá navegar com seus robôs em um dado planalto, para isso ele passará o planalto duas informações para a navegação do robô, a primeira informação dá a posição do robô, a segunda informação é uma série de instruções que dizem ao robô como explorar o planalto, sua tarefa é criar este serviço também.</p>
+          <p>A posição é composta de dois inteiros e uma letra separada por espaços, correspondendo às coordenadas X e Y e a orientação do rover (Norte, Sul, Leste, Oeste).</p>
+          <p>Um exemplo de entrada seria, planalto <code>A</code>, posição <code>1 2 N</code>, navegação <code>LMLMLMLMM</code>; a resposta seria <code>1 3 N</code> (Norte)
+          Outro exemplo de entrada seria, planalto <code>A</code>, posição <code>3 3 E</code>, navegação <code>MMRMMRMRRM</code>; a resposta seria <code>5 1 E</code> (Leste)</p>
+          <h2>Considerações</h2>
+          <p>Voce está livre para definir a melhor arquitetura e tecnologias para solucionar este desafio, mas não se esqueça de contar sua motivação no
+          arquivo README que deve acompanhar sua solução, junto com os detalhes de como executar seu programa.</p>
+          <p>Documentação e testes são avaliados também ;)</p>
+          <p>Lembre-se de que iremos executar seu código com navegações bem mais complexas que o exemplo acima, por isso é importante pensar em requisitos não funcionais também!</p>
+          <p>Para o desenvolvimento desse sistema, nós solicitamos que você utilize a sua (ou as suas) linguagem de programação principal. Pode ser Java, JavaScript ou Ruby.</p>
+          <p>O prazo máximo para entrega é dia de 5 dias, para divulgar sua solução para nós, recomendamos que um pull request seja aberto a partir deste repositório.</p>
+          <p>Bom desafio!</p>
+          </div>
+    </div>
+  </section>
+</body>
+</html>
